@@ -1,10 +1,7 @@
-import Piano from "../components/Piano";
-
-
 function App() {
 	return (
 		<div>
-		<Piano />
+			<p>Template SACOD</p>
 		</div>
 	);
 }

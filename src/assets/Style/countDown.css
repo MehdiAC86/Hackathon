@@ -1,0 +1,19 @@
+.countdown {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+    background-color: #D6E4E5;
+    background-image: url("/src/assets/Images/CountDownFrame.png");
+    background-size: cover;
+    background-position-y: 5%;
+    margin: 0 40rem;
+    padding: 4rem;
+    border: solid #EB6440 5px;
+    border-radius: 100px;
+}
+
+.counter {
+    color: aliceblue;
+}

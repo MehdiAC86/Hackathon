@@ -9,11 +9,10 @@ import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <Root />,
     children: [
       {
-        path: "home",
+        path: "/",
         element: <App />,
       },
       {
