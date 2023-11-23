@@ -18,9 +18,8 @@ function Piano() {
     }, 150);
   };
 
-  const pressKey = (e) => {
-    pianoPlay(e.key);
-  };
+
+
 
   function slideVolume(e) {
     setVolume(e.target.value);
@@ -28,22 +27,20 @@ function Piano() {
   }
 
   const keys = [
-    "a",
+    "z",
     "d",
-    "e",
-    "f",
+    "r",
     "g",
-    "h",
-    "i",
+    "e",
+    "t",
+    "f",
+    "y",
     "j",
+    "u",
+    "i",
+    "g",
     "o",
     "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "y",
     "z",
   ];
 

@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Page404 from "./pages/Page404.jsx";
 import Tuto from "./pages/Tuto.jsx";
-import Contact from "./pages/Contact.jsx";
+import Contact from "./components/Contact.jsx";
 
 const router = createBrowserRouter([
   {
