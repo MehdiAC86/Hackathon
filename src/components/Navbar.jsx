@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <header className="flex justify-around	">
+      <header className="flex justify-between mx-8 my-8">
         <NavLink to="home">
           <img src="https://picsum.photos/100" alt="logo" />
         </NavLink>

@@ -1,30 +1,27 @@
 import { useState } from "react";
+import "../assets/Style/piano.css";
 
 function Piano() {
   const [audio, setAudio] = useState(new Audio("/src/assets/audios/a.wav"));
   const [volume, setVolume] = useState(1);
-  // on met une note par default
 
-  // on applique cette fonction a tout nos element note
   const pianoPlay = (note) => {
     const sound = new Audio(`/src/assets/audios/${note}.wav`);
     setAudio(sound);
+  sound.volume=volume;
     sound.play();
 
-    const clicKey = document.querySelector(`data-key=${note}`);
+    const clicKey = document.querySelector(`[data-key=${note}]`);
     clicKey.classList.add("active");
     setTimeout(() => {
       clicKey.classList.remove("active");
     }, 150);
   };
 
-  const pressKey = (e) => {
-    pianoPlay(e.key);
-  };
-
   function slideVolume(e) {
-    setVolume(e.target.value);
-    audio.volume = e.target.value;
+  const newVolume= parseFloat(e.target.value);
+    setVolume(newVolume);
+    audio.volume=newVolume
   }
 
   const keys = [
@@ -63,9 +60,9 @@ function Piano() {
         </div>
       </header>
       <ul className="liste-notes">
-        {keys.map((note) => (
+        {keys.map((note, index) => (
           <li key={note}>
-            <button onClick={() => pianoPlay(note)} data-key={note}>
+            <button className={(index == 1 || index == 3 || index == 8 || index == 6  || index == 10 || index == 13 || index == 15) ? "black" : "white"} onClick={()=>pianoPlay(note)} data-key={note}>
               {note}
             </button>
           </li>

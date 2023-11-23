@@ -48,7 +48,8 @@ body {
   background: linear-gradient(#333 , #000 );
   border-radius: 0 0 5px 5px;
   margin: 0 -22px 0px -22px;
-  z-index: 3
+  z-index: 3;
+  color: white;
 }
 
  .black:active {
