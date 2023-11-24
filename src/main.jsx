@@ -3,6 +3,7 @@ import App from "./pages/App.jsx";
 import Root from "./layout/Root.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+
 import Page404 from "./pages/Page404.jsx";
 import Tuto from "./pages/Tuto.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <App />,
       },
+
       {
         path: "tuto",
         element: <Tuto />,

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "../assets/Style/navbar.css";
 
 function Navbar() {
   return (
@@ -15,6 +16,7 @@ function Navbar() {
 
         <ul className="flex items-center gap-4">
           <NavLink to="tuto"> Tuto déco </NavLink>
+          <NavLink to="images"> Images </NavLink>
           <NavLink to="contact"> Contact </NavLink>
         </ul>
       </nav>
