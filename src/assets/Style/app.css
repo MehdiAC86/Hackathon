@@ -4,7 +4,8 @@
 
 body {
     background-image: url("../src/assets/Images/Homepage.webp");
-    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -28,4 +29,8 @@ h2 {
     font-family: 'Mountains of Christmas',
         serif;
     color: #AF2655;
+}
+
+.error {
+    margin-top: 150px;
 }
