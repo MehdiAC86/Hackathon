@@ -14,12 +14,11 @@ ul {
 }
 
 .navigation {
-    min-width: 100px;
     padding: 22px 33px;
     font-family: 'Montserrat',
         cursive;
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 1.6rem;
+    line-height: 1.4rempx;
     color: #FFF;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
     background: #5e0d0c;
