@@ -50,6 +50,7 @@ body {
   margin: 0 -22px 0px -22px;
   z-index: 3;
   color: white;
+  text-align:left;
 }
 
  .black:active {
@@ -97,10 +98,6 @@ h2 {
   font-weight: 400;
   font-size: 1.2rem;
   margin-right: 15px;
-}
-
-.volume input{
-accent-color: #fff
 }
 
 

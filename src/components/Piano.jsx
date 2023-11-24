@@ -3,12 +3,11 @@ import "../assets/Style/piano.css";
 
 function Piano() {
   const [audio, setAudio] = useState(new Audio("/src/assets/audios/a.wav"));
-  const [volume, setVolume] = useState(1);
+
 
   const pianoPlay = (note) => {
     const sound = new Audio(`/src/assets/audios/${note}.wav`);
     setAudio(sound);
-  sound.volume=volume;
     sound.play();
 
     const clicKey = document.querySelector(`[data-key=${note}]`);
@@ -17,12 +16,6 @@ function Piano() {
       clicKey.classList.remove("active");
     }, 150);
   };
-
-  function slideVolume(e) {
-  const newVolume= parseFloat(e.target.value);
-    setVolume(newVolume);
-    audio.volume=newVolume
-  }
 
   const keys = [
     "a",
@@ -46,19 +39,6 @@ function Piano() {
 
   return (
     <div className="container">
-      <header>
-        <div className="column volume">
-          <span>volume</span>
-          <input
-            type="range"
-            min="0"
-            max="4"
-            value={volume}
-            step="any"
-            onChange={slideVolume}
-          />
-        </div>
-      </header>
       <ul className="liste-notes">
         {keys.map((note, index) => (
           <li key={note}>
