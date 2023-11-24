@@ -29,6 +29,7 @@ function Contact() {
         <input
           type="text"
           name="name"
+
           placeholder="Nom"
           value={name}
           onChange={handleNameChange}

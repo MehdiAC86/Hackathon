@@ -1,17 +1,19 @@
 .countdown {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    gap: 5rem;
     background-color: #D6E4E5;
     background-image: url("/src/assets/Images/CountDownFrame.png");
     background-size: cover;
     background-position-y: 5%;
     margin: 0 25rem;
     padding: 4rem;
+    margin: 0 40rem;
+    margin-top: 10px;
+    padding: 1.5rem;
     border: solid #EB6440 5px;
-    border-radius: 100px;
+    border-radius: 70px;
 }
 
 .counter {

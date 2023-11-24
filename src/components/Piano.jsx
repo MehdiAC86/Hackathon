@@ -56,6 +56,8 @@ function Piano() {
               onClick={() => pianoPlay(note)}
               data-key={note}
             >
+
+            <button className={(index == 1 || index == 3 || index == 8 || index == 6  || index == 10 || index == 13 || index == 15) ? "black" : "white"} onClick={()=>pianoPlay(note)} data-key={note}>
               {note}
             </button>
           </li>

@@ -15,6 +15,7 @@ function Navbar() {
         </NavLink>
 
         <ul className="flex items-center gap-4">
+
           <NavLink to="tuto" className="navigation">
             Tuto déco
           </NavLink>
@@ -24,6 +25,9 @@ function Navbar() {
           <NavLink to="contact" className="navigation">
             Contact
           </NavLink>
+          <NavLink to="tuto"> Tuto déco </NavLink>
+          <NavLink to="images"> Images </NavLink>
+          <NavLink to="contact"> Contact </NavLink>
         </ul>
       </nav>
 
