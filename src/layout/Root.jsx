@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 function Root() {
   return (
-    <div className="frame">
+    <div>
       <Navbar />
       <main className="w-[90%] mt-10 mx-auto">
         <Outlet />

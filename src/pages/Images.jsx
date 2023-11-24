@@ -25,7 +25,7 @@ function Images() {
   return (
     <div className="images">
       {pictures.map((pic) => (
-        <NavLink to={`/images/${pic.id}`} className="collection" key={pic.id}>
+        <NavLink to={`/images/${pic.id}`} key={pic.id}>
           <img src={pic.src.large} alt={pic.alt} className="pictures" />
         </NavLink>
       ))}

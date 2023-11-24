@@ -1,9 +1,9 @@
 function Footer() {
-	return (
-		<footer>
-			<p>Créer avec ❤️ par _votre_team_ </p>
-		</footer>
-	);
+  return (
+    <footer>
+      <h1>Créer avec ❤️ par Tessa, Mehdi, Mohamed, Jean Marc et Alain</h1>
+    </footer>
+  );
 }
 
 export default Footer;

@@ -1,12 +1,18 @@
 import CountDown from "../components/countDown";
 import "../assets/Style/app.css";
+import Piano from "../components/Piano";
 
 function App() {
   return (
-    <div className="home-page">
+    <>
       <h1>Merry Christmas</h1>
-      <CountDown />
-    </div>
+      <div>
+        <CountDown />
+      </div>
+      <div>
+        <Piano />
+      </div>
+    </>
   );
 }
 
