@@ -26,7 +26,7 @@ function Contact() {
 
   return (
     <div className="contactContainer">
-      <h3>Contact form</h3>
+      <h1>Contact form</h1>
       <form onSubmit={handleMessageChange}>
         <input
           type="text"
