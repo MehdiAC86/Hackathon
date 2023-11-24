@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url("../src/assets/Images/Homepage.webp");
+    object-fit: cover;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Mountains of Christmas',
+        serif;
+    color: #AF2655;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Mountains of Christmas',
+        serif;
+    color: #AF2655;
+}
+
+.error {
+    margin-top: 150px;
+}

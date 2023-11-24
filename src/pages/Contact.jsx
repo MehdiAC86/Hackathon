@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../assets/Style/contact.css";
 
-
 function Contact() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
@@ -26,12 +25,12 @@ function Contact() {
 
   return (
     <div className="contactContainer">
-      <h1>Contact form</h1>
       <form onSubmit={handleMessageChange}>
         <input
           type="text"
           name="name"
-          placeholder="Name"
+
+          placeholder="Nom"
           value={name}
           onChange={handleNameChange}
         />
@@ -45,20 +44,20 @@ function Contact() {
         <input
           type="text"
           name="subject"
-          placeholder="Subject"
+          placeholder="Sujet"
           value={subject}
           onChange={handleSubjectChange}
         />
         <textarea
           name="message"
-          placeholder="Write your message here"
+          placeholder="Écris ton message...."
           rows="8"
           cols="50"
           value={message}
           onChange={handleMessageChange}
         />
         <div className="contactBtn">
-          <button type="submit">Send</button>
+          <button type="submit">Envoyer</button>
         </div>
       </form>
     </div>

@@ -4,7 +4,6 @@ import "../assets/Style/piano.css";
 function Piano() {
   const [audio, setAudio] = useState(new Audio("/src/assets/audios/a.wav"));
 
-
   const pianoPlay = (note) => {
     const sound = new Audio(`/src/assets/audios/${note}.wav`);
     setAudio(sound);
@@ -18,19 +17,23 @@ function Piano() {
   };
 
   const keys = [
-    "z",
-    "h",
+    "a",
     "d",
-    "s",
     "e",
-    "t",
     "f",
-    "y",
-    "j",
-    "u",
     "g",
+    "h",
     "i",
+    "j",
     "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "y",
+    "z",
   ];
 
   return (
@@ -38,6 +41,22 @@ function Piano() {
       <ul className="liste-notes">
         {keys.map((note, index) => (
           <li key={note}>
+            <button
+              className={
+                index == 1 ||
+                index == 3 ||
+                index == 8 ||
+                index == 6 ||
+                index == 10 ||
+                index == 13 ||
+                index == 15
+                  ? "black"
+                  : "white"
+              }
+              onClick={() => pianoPlay(note)}
+              data-key={note}
+            >
+
             <button className={(index == 1 || index == 3 || index == 8 || index == 6  || index == 10 || index == 13 || index == 15) ? "black" : "white"} onClick={()=>pianoPlay(note)} data-key={note}>
               {note}
             </button>

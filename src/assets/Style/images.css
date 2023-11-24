@@ -1,0 +1,14 @@
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+.pictures {
+    border-radius: 2rem;
+    border-width: 1cap;
+    border-style: solid;
+    border-image-slice: 20;
+}
