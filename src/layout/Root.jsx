@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom";
 
 function Root() {
   return (
-    <div logo="frame">
+    <div className="frame">
       <Navbar />
-      <main logo="w-[90%] mt-10 mx-auto">
+      <main className="w-[90%] mt-10 mx-auto">
         <Outlet />
       </main>
       <Footer />

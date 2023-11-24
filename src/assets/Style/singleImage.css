@@ -1,0 +1,38 @@
+.card-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border-width: 1cap;
+    border-style: solid;
+    border-image-slice: 20;
+}
+
+.share-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.share {
+    padding: 0 3rem;
+}
+
+.download {
+    border: solid 2px red;
+    border-radius: 40rem;
+}
+
+.download:hover {
+    color: aliceblue;
+    background-color: black;
+}

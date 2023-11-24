@@ -1,0 +1,13 @@
+nav {
+    margin: 0 15rem;
+    border: solid #EB6440 5px;
+    justify-content: space-between;
+    background-image: url("../src/assets/Images/Homepage.webp");
+    border-radius: 100px;
+}
+
+.deco {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
