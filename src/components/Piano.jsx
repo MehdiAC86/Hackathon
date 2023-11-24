@@ -29,19 +29,19 @@ function Piano() {
   const keys = [
     "z",
     "d",
-    "r",
-    "g",
     "e",
     "t",
-    "f",
     "y",
-    "j",
+    "u",
+    "i",
+    "o",
+   /* "j",
     "u",
     "i",
     "g",
     "o",
     "p",
-    "z",
+    "z",*/
   ];
 
   return (

@@ -3,7 +3,7 @@ function Footer() {
 
 	return (
 		<footer>
-			<p>Créer avec ❤️ par _votre_team_ </p>
+			<p>Créer avec ❤️ par Tessa, Mehdi, Mohamed et Jean Marc </p>
 		</footer>
 	);
 }
