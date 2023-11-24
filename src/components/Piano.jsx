@@ -28,21 +28,19 @@ function Piano() {
 
   const keys = [
     "z",
+    "h",
     "d",
+    "s",
     "e",
     "t",
+    "f",
     "y",
+    "j",
     "u",
-    "i",
-    "o",
-   /* "j",
-    "u",
-    "i",
     "g",
+    "i",
     "o",
-    "p",
-    "z",*/
-  ];
+    ];
 
   return (
     <div className="container">
