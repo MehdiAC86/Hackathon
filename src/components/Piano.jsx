@@ -11,7 +11,9 @@ export default function Piano() {
         <span>Volume</span>
         <input type="range" min="0" max="1" value="0.5" step="any" />
       </div>
-      <ul className="liste-note">
+      </header>
+      <div>
+      <ul className="liste-notes">
         <li className="note white" data-key="a">
           <span>a</span>
         </li>
@@ -64,7 +66,7 @@ export default function Piano() {
          <span>j</span>
         </li>
       </ul>
-      </header>
+      </div>
     </>
   );
 }

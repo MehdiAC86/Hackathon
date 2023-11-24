@@ -16,20 +16,20 @@ body {
   background: linear-gradient(to top, rgb(225, 225, 225), rgb(247, 223, 184));
 }
 
-header {
+/* .container {
   display: flex;
   align-items: center;
   justify-content: center;
- background-image: url(https://media.gettyimages.com/id/1344645608/fr/vectoriel/cartes-de-v%C5%93ux-de-no%C3%ABl.jpg?s=612x612&w=gi&k=20&c=L9f0B_nX0CACZgHb30JFqUED4I6jQJ6akyc8IWNbRjY=); 
+  background-image: url(https://media.gettyimages.com/id/1344645608/fr/vectoriel/cartes-de-v%C5%93ux-de-no%C3%ABl.jpg?s=612x612&w=gi&k=20&c=L9f0B_nX0CACZgHb30JFqUED4I6jQJ6akyc8IWNbRjY=);
   border-radius: 20px;
   width: 900px;
   height: 500px;
   padding: 35px 40px;
   padding: 35px 40px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 3);
-} 
+} */
 
-.liste-note {
+.liste-notes {
   list-style: none;
   display: flex;
   margin-top: 40px;
@@ -65,14 +65,14 @@ header {
   box-shadow: inset -2px 2px 15px rgba(255, 255, 225, 1);
 }
 
-.liste-notes.note {
+.liste-note.note {
   cursor: pointer;
   color: #a4a3a3;
   position: relative;
-  user-select: none; 
+  user-select: none;
 }
 
-.notes span {
+.note span {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -80,22 +80,25 @@ header {
   text-align: center;
 }
 
-header {
+div {
   color: #dedede;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-div {
+   justify-content: space-between;
+  /* align-items: center; */
   color: black;
   text-transform: uppercase;
   font-size: 1.56rem;
-   
+  width: 1px;
+  height: 400px;
+  padding: 35px 40px;
+  padding: 35px 40px;
+  
 }
 
 /* .columm {
   display: flex;
   align-items: center;
+  
 } */
 
 /* .columm span {
@@ -109,7 +112,5 @@ div {
   display: flex;
   width: 90px;
   height: 40px;
-  margin: 10px;
-  accent-color: red;
+  margin: 50px;
 }
-
