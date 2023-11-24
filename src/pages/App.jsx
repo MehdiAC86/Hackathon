@@ -1,7 +1,12 @@
+import Piano from "../components/Piano";
+import Contact from "../components/Contact";
+
+
 function App() {
 	return (
 		<div>
-			<p>Template SACOD</p>
+		<Piano />
+		<Contact/>
 		</div>
 	);
 }
