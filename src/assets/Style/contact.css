@@ -4,15 +4,6 @@
     width: 100%;
   }
 
-  /*.contactContainer,textarea {
-display:flex ;
-flex-direction: column;
-text-align: center;
-background-color: aquamarine;
-padding-left: 33%;
-padding-right: 33%;
-}*/
-
   .input {
     margin: 10px;
   }
