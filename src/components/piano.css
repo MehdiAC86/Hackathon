@@ -83,7 +83,7 @@ body {
 div {
   color: #dedede;
   display: flex;
-   justify-content: space-between;
+  justify-content: space-between;
   /* align-items: center; */
   color: black;
   text-transform: uppercase;
@@ -92,7 +92,6 @@ div {
   height: 400px;
   padding: 35px 40px;
   padding: 35px 40px;
-  
 }
 
 /* .columm {

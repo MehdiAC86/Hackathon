@@ -1,5 +1,4 @@
-
-import CountDown from "../components/countDown";
+import CountDown from "../components/CountDown";
 import "../assets/Style/app.css";
 import Piano from "../components/Piano";
 

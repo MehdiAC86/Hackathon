@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../assets/Style/countDown.css";
 
 function CountDown() {
@@ -7,34 +7,38 @@ function CountDown() {
   const [minutes, setMinutes] = useState();
   const [seconds, setSeconds] = useState();
 
+  const countdown = () => {
+    const endDate = new Date("December 25, 2023 00:00:00").getTime();
+    const today = new Date().getTime();
+
+    const timeDiff = endDate - today;
+
+    const seconds = 1000;
+    const minutes = seconds * 60;
+    const hours = minutes * 60;
+    const days = hours * 24;
+
+    let timeDays = Math.floor(timeDiff / days);
+    let timeHours = Math.floor((timeDiff % days) / hours);
+    let timeMinutes = Math.floor((timeDiff % hours) / minutes);
+    let timeSeconds = Math.floor((timeDiff % minutes) / seconds);
+
+    timeHours = timeHours < 10 ? "0" + timeHours : timeHours;
+    timeMinutes = timeMinutes < 10 ? "0" + timeMinutes : timeMinutes;
+    timeSeconds = timeSeconds < 10 ? "0" + timeSeconds : timeSeconds;
+
+    setDays(timeDays);
+    setHours(timeHours);
+    setMinutes(timeMinutes);
+    setSeconds(timeSeconds);
+  };
+
   useEffect(() => {
-    const countdown = () => {
-      const endDate = new Date("December 25, 2023 00:00:00").getTime();
-      const today = new Date().getTime();
+    const interval = setInterval(countdown, 1000);
 
-      const timeDiff = endDate - today;
-
-      const seconds = 1000;
-      const minutes = seconds * 60;
-      const hours = minutes * 60;
-      const days = hours * 24;
-
-      let timeDays = Math.floor(timeDiff / days);
-      let timeHours = Math.floor((timeDiff % days) / hours);
-      let timeMinutes = Math.floor((timeDiff % hours) / minutes);
-      let timeSeconds = Math.floor((timeDiff % minutes) / seconds);
-
-      timeHours = timeHours < 10 ? "0" + timeHours : timeHours;
-      timeMinutes = timeMinutes < 10 ? "0" + timeMinutes : timeMinutes;
-      timeSeconds = timeSeconds < 10 ? "0" + timeSeconds : timeSeconds;
-
-      setDays(timeDays);
-      setHours(timeHours);
-      setMinutes(timeMinutes);
-      setSeconds(timeSeconds);
+    return () => {
+      clearInterval(interval);
     };
-
-    setInterval(countdown, 1000);
   }, []);
 
   return (
